@@ -62,8 +62,8 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-    "test": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "test": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
