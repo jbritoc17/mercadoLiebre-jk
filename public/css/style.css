@@ -143,13 +143,22 @@ h4.subtituloh4 {
   border-radius: 40px;
   margin-bottom: 0px;
   margin-left: 230px;
+  
 }
 
-#oferta {
-  text-align: left;
-  background-color: #d3d3d39d;
+#subtitle1 {
+  text-align: center;
+  
   margin-bottom: 0px;
   padding-bottom: 20px;
+  font-size: 50px;
+}
+#subtitle1 ,#subtitle {
+  text-align: left;
+  
+  margin-bottom: 0px;
+  
+  font-size: 30px;
 }
 
 .main-navbar {
@@ -175,20 +184,10 @@ h4.subtituloh4 {
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);;
 }
-
-/* .titulares {
-  font-size: 24px;
-  background-color: #d3d3d39d;
-  padding: 23px;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 90vw;
-} */
-
-/* .recuadro img {
-  width: 50%;
+.container-footer ul{
+  list-style: none;
 }
- */
+
 /* ----------------------MEDIA QUERIS 360px---------------------------------- */
 @media (min-width: 360px) {
   .main-products {
@@ -219,7 +218,7 @@ h4.subtituloh4 {
     display: none;
   }
   .recuadro img {
-    width: 80%;
+    width: 100%;
     
   }
   .recuadro i {
@@ -257,7 +256,7 @@ h4.subtituloh4 {
     max-width: 70%;
   }
 }
-
+/* ----------------------MEDIA QUERIS 768px---------------------------------- */
 @media (min-width: 768px) {
   .products {
     flex-wrap: wrap;
@@ -326,7 +325,7 @@ h4.subtituloh4 {
     text-align: center;
   }
 }
-
+/* ----------------------MEDIA QUERIS 1200px---------------------------------- */
 @media (min-width: 1200px) {
 
   .main-header-top-bar,
@@ -356,4 +355,26 @@ h4.subtituloh4 {
 
     width: 20vw;
   }
+.container-footer ul{
+ display: flex;
+ flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+}
+.container-footer-list{
+ margin: 10px;
+max-width: 30%;
+font-size: 12px;
+}
+.container-footer-list h4{
+ font-size: 14px;
+}
+.container-footer-list p{
+ color: #585252;
+}
+
+.copyright {
+text-align: left;
+}
+  
 }
