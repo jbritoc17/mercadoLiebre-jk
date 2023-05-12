@@ -22,7 +22,7 @@
 <body>
   <header class="main-header">
     <div class="main-header-top-bar">
-        <a href="/"><img src="/img/logo-mercado-liebre.svg" class="logoliebre" /></a>
+      <a href="/"><img src="/img/logo-mercado-liebre.svg" class="logoliebre" /></a>
       <!-- BARRA DE BUSQUEDAD -->
       <div class="search">
         <input type="search" id="search-input" name="search" placeholder="Buscar productos, marcas y más" />
@@ -50,23 +50,25 @@
 
       <ul class="left-navbar">
         <li>
-            <a href="/registrate">Crea tu cuenta
-              <i class="fa-solid fa-address-card"></i></a>
-          </li>
-          <li><a href="/ingresa">Ingresá
-              <i class="fa-solid fa-right-to-bracket"></i></li></a>
-          <li>
-            <a href="#">Mis Compras
-              <i class="fa-solid fa-basket-shopping"></i></a>
-          </li>
+          <a href="/registrate">Crea tu cuenta
+            <i class="fa-solid fa-address-card"></i></a>
+        </li>
+        <li><a href="/ingresa">Ingresá
+            <i class="fa-solid fa-right-to-bracket"></i></li></a>
+        <li>
+          <a href="#">Mis Compras
+            <i class="fa-solid fa-basket-shopping"></i></a>
+        </li>
       </ul>
     </nav>
   </header>
   <main class="main-products-login">
     <form action="/" method="get" class="">
-      <input type="text" id="usuario-login" name="usuario" placeholder="Nombre de usuario" required>
-      <input type="password" id="password-login" name="password" placeholder="Ingresar contraseña"required>
-    
+      <input type="text" id="usuario-login" name="usuario" placeholder="Nombre de usuario" minlength="8" maxlength="32"
+        required>
+      <input type="password" id="password-login" name="password" placeholder="Ingresar contraseña" minlength="8"
+        maxlength="32" required>
+
       <div class="form-button-login">
         <button type="submit">Enviar</button>
       </div>
@@ -115,10 +117,10 @@
         </p>
       </div>
     </ul>
-    
 
-      <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-    
+
+    <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+
   </footer>
 </body>
 

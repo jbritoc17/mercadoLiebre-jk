@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-
+  background-color: transparent;
 }
 
 .main-header {
@@ -125,7 +125,7 @@ button[type="submit"] {
   color: #1259c3;
   text-align: center;
   font-size: 2em;
-  margin-top: 70px;
+  margin-top: 5px;
 }
 
 footer {
@@ -478,7 +478,7 @@ button[type="reset"] {
     margin: 0px;
   }
   #usuario-login, #password-login{
-    width: 50vw;
+    max-width: 50vw;
   }
    
   .main-products-login form {
@@ -553,24 +553,20 @@ button[type="reset"] {
     margin: 0px;
   }
 
-  form {
-    flex-wrap: wrap;
+  .main-products-login form {
+    max-width: 25vw;
   }
   
-  /* Estilos de los campos de entrada */
-  .main-register input[type="text"],
-  .main-register input[type="password"],
-  select {
-    display: flex;
-    flex-wrap: wrap;
-  }
+ 
 
   #usuario-login, #password-login{
     padding: 10px;
+      max-width: 25vw;
+    
   }
    
   .main-products-login button[type="submit"] {
-    width: 50vw;
+    width: 25vw;
   }
 
 }
