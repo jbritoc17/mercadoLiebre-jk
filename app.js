@@ -6,8 +6,8 @@ const userRoutes = require('./routes/userRoutes');
 
 let app = express();
 
-app.use(express.static("public"));
 app.set('view engine', 'ejs');
+app.use(express.static("public"));
 
 app.set('views',[
     path.join(__dirname, './views/main'),

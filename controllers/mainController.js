@@ -4,9 +4,8 @@ const path = require("path");
 
 mainController = {
   index: (req, res) => {
-    res.render("index");
+    res.render('index', { title: 'Mercado Liebre' });
   }
- 
 };
 
 module.exports = mainController;

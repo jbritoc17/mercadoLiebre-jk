@@ -4,11 +4,11 @@ const path = require("path");
 
 userController = {
   logIn: (req, res) => {
-    res.render("login");
+    res.render("login", {title: 'Ingresa'});
   },
-  
+
   logUp: (req, res) => {
-    res.render("register");
+    res.render("register", {title: 'registrate'});
   },
 };
 
