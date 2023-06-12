@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
   <%- include('../partials/head') %>
-  
-</head>
+
 
 <body>
   <%- include('../partials/header')  %>
@@ -15,199 +14,46 @@
     <h3 id="subtitle1" class="titulares">Basado en tu última visita</h3>
     <section class="products">
 
+      <% productos.forEach(producto => { %>
       <article class="recuadro">
-        <img src="/img/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" />
+        <a href="../products/<%= producto.id %>/detail">
+        <img src="<%= producto.img %>" alt="" />
+        
+          
+        </a>
         <div class="items1">
           <i class="fa-solid fa-truck"></i>
         </div>
         <div class="items2">
-          <p class="precios">$6.770</p>
-          <p class="descuentos">40% off</p>
+          <p class="precios"><%= producto.price %></p>
+          <p class="descuentos"><%= producto.discont%></p>
         </div>
-        <h3>Cafetera Moulinex</h3>
+        <h3><%= producto.title %></h3>
       </article>
-
-      <article class="recuadro">
-        <img src="/img/smart-y68-doble-pulso-audifonos-de-obsequio-gloss-tecnologia-1155555705.png" alt="Smart watch" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$9.770</p>
-          <p class="descuentos">10% off</p>
-        </div>
-        <h3>Smart Watch y68</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/auricular-bluetooth-inalambrico.jpg" alt="auricular bluetooth inalambrico" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$6.770</p>
-          <p class="descuentos">40% off</p>
-        </div>
-        <h3>Auricular bluetooth TWS</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" width="100%" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$230.000</p>
-          <p class="descuentos">20% off</p>
-        </div>
-        <h3>Macbook Pro 2019</h3>
-      </article>
-      <article class="recuadro">
-        <img src="/img/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" width="100%" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$70.500</p>
-          <p class="descuentos">10% off</p>
-        </div>
-        <h3>Samsung Galaxy S10</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" width="100%" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$23.200</p>
-          <p class="descuentos">5% off</p>
-        </div>
-        <h3>SmartTv Samsung 43"</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/carro.jpg" alt="Carro electrico juguete" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$11.500</p>
-          <p class="descuentos">10% off</p>
-        </div>
-        <h3>Carro Electrico Juguete</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/bicicleta-roadmaster.jpg" alt="bicicleta-roadmaster" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$33.200</p>
-          <p class="descuentos">5% off</p>
-        </div>
-        <h3>Bicicleta Roadmaster</h3>
-      </article>
+      <% }) %>
+      
     </section>
     <!-- --------------SESION DE OFERTAS------------------------------------ -->
     <h3 id="subtitle" class="titulares">Ofertas</h3>
     <section class="products">
 
-      <article class="recuadro">
-        <img src="/img/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$6.770</p>
-          <p class="descuentos">40% off</p>
-        </div>
-        <h3>Cafetera Moulinex</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/smart-y68-doble-pulso-audifonos-de-obsequio-gloss-tecnologia-1155555705.png" alt="Smart watch" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$9.770</p>
-          <p class="descuentos">10% off</p>
-        </div>
-        <h3>Smart Watch y68</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/auricular-bluetooth-inalambrico.jpg" alt="auricular bluetooth inalambrico" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$6.770</p>
-          <p class="descuentos">40% off</p>
-        </div>
-        <h3>Auricular bluetooth TWS</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019" width="100%" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$230.000</p>
-          <p class="descuentos">20% off</p>
-        </div>
-        <h3>Macbook Pro 2019</h3>
-      </article>
-      <article class="recuadro">
-        <img src="/img/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10" width="100%" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$70.500</p>
-          <p class="descuentos">10% off</p>
-        </div>
-        <h3>Samsung Galaxy S10</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart" width="100%" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$23.200</p>
-          <p class="descuentos">5% off</p>
-        </div>
-        <h3>SmartTv Samsung 43"</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/carro.jpg" alt="Carro electrico juguete" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$11.500</p>
-          <p class="descuentos">10% off</p>
-        </div>
-        <h3>Carro Electrico Juguete</h3>
-      </article>
-
-      <article class="recuadro">
-        <img src="/img/bicicleta-roadmaster.jpg" alt="bicicleta-roadmaster" />
-        <div class="items1">
-          <i class="fa-solid fa-truck"></i>
-        </div>
-        <div class="items2">
-          <p class="precios">$33.200</p>
-          <p class="descuentos">5% off</p>
-        </div>
-        <h3>Bicicleta Roadmaster</h3>
-      </article>
+      <% productos.forEach(producto => { %>
+        <article class="recuadro">
+          <a href="../products/<%= producto.id %>/detail">
+          <img src="<%= producto.img %>" alt="" />
+          
+            
+          </a>
+          <div class="items1">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="items2">
+            <p class="precios"><%= producto.price %></p>
+            <p class="descuentos"><%= producto.discont%></p>
+          </div>
+          <h3><%= producto.title %></h3>
+        </article>
+        <% }) %>
     </section>
   </main>
   <!-- ----------------------FOOTER------------------------------- -->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+
+  <body>
+    <%- include('../partials/header') %>
+      <h1>Detalles del producto</h1>
+
+      <h2>Nombre: <%= producto.title %>
+      </h2>
+      <img src="<%= producto.img %>" />
+      <h2>Precio: <%= producto.price %>
+      </h2>
+
+      <form action="/products/<%= producto.id %>/delete?_method=delete" method="post">
+        <input type="submit" value="Eliminar producto"></input>
+      </form>
+      <br>
+      <a href="/products/<%= producto.id %>/update">
+        <button>Editar producto</button>
+      </a>
+
+
+      <%- include('../partials/footer') %>
+  </body>
+
+</html>

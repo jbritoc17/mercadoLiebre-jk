@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Cafetera Moulinex",
+        "price": "$6.770",
+        "discont": "40% Off",
+        "img": "/img/products/img-cafetera-moulinex.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Smart Watch y68",
+        "price": "$9.770",
+        "discont": "10% Off",
+        "img": "/img/products/smart-y68-doble-pulso-audifonos-de-obsequio-gloss-tecnologia-1155555705.png"
+    },
+    {
+        "id": 3,
+        "title": "Auricular bluetooth TWS",
+        "price": "$6.770",
+        "discont": "40% Off",
+        "img": "/img/products/auricular-bluetooth-inalambrico.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Macbook Pro 2019",
+        "price": "$230.000",
+        "discont": "20% Off",
+        "img": "/img/products/img-macbook-pro-2019.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Samsung Galaxy S10",
+        "price": "$70.500",
+        "discont": "10% Off",
+        "img": "/img/products/img-samsung-galaxy-s10.jpg"
+    },
+    {
+        "id": 6,
+        "title": "SmartTv Samsung 43'",
+        "price": "$23.200",
+        "discont": "5% Off",
+        "img": "/img/products/img-tv-samsung-smart.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Carro Electrico Juguete",
+        "price": "$11.500",
+        "discont": "10% Off",
+        "img": "/img/products/carro.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Bicicleta Roadmaster",
+        "price": "$33.200",
+        "discont": "5% Off",
+        "img": "/img/products/bicicleta-roadmaster.jpg"
+    }
+]

@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: transparent;
+  background-color: #e4e4e4;
 }
 
 .main-header {
@@ -192,7 +192,7 @@ h4.subtituloh4 {
   width: 70vw;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  transition: box-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .recuadro:hover {
@@ -310,7 +310,6 @@ button[type="reset"] {
 }
 
 
-
 /* ----------------------MEDIA QUERIS 360px---------------------------------- */
 @media (min-width: 360px) {
   .main-products {
@@ -320,7 +319,8 @@ button[type="reset"] {
   .recuadro:hover h3 {
     display: block;
   }
-
+  
+ 
   .precios {
     font-size: 16px;
     flex-grow: 0.3;
