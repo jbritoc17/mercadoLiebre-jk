@@ -7,6 +7,16 @@ userController = {
     res.render("login", {title: 'Ingresa'});
   },
 
+  processLogin: (req, res)=>{
+    let errors = validationResult(req);
+
+    if(errors.isEmpty()){
+      
+    }else{
+      return res.render('/login',{errors:errors.errors});
+    }
+  },
+
   logUp: (req, res) => {
     res.render("register", {title: 'registrate'});
   },

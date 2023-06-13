@@ -3,10 +3,24 @@
   <%- include('../partials/head')  %>
 <body>
   <%- include('../partials/header')  %>
+<% if (typeof errors != 'undefined') { %>
+  <p style="color: red;">ERROR</p>
+  <ul>
+    <% for (let i = 0; i < errors.length; i++) { %>
+      <li>
+        <%= errors[i].msg %>
+      </li>
+      
+   <% } %>
+  </ul>
+<% } %>
+
   <main class="main-products-login">
-    <form action="/" method="get" class="">
-      <input type="text" id="usuario-login" name="usuario" placeholder="Nombre de usuario" minlength="8" maxlength="32"
+    <form action="/users/login" method="POST" class="">
+      
+      <input type="text" id="usuario-login" name="email" placeholder="Ingrese email" minlength="8" maxlength="32"
         required>
+
       <input type="password" id="password-login" name="password" placeholder="Ingresar contraseña" minlength="8"
         maxlength="32" required>
 

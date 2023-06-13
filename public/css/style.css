@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #e4e4e4;
+  background-color: transparent;
 }
 
 .main-header {
@@ -257,7 +257,7 @@ h4.subtituloh4 {
 
 /* Estilos del formulario */
 form {
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -308,8 +308,58 @@ button[type="reset"] {
   display: flex;
   justify-content: space-around;
 }
-
-
+.img-detail{
+  display: block;
+  width: 60%;
+  margin: auto;
+  border-radius: 30px;
+  
+  padding: 0px;
+}
+.detail-title{
+font-size: 50px;
+  margin: 20px 10px 0 30px;
+  font-weight: 300;
+}
+.detail-title, .detail-price, .detail-discont{
+  display: inline-block;
+  
+}
+.detail-discont{
+color: #25bd17;
+  position: relative;
+  top: -10px;
+}
+.detail-price{
+  position: relative;
+  font-size: 30px;
+    font-weight: 100;
+    margin: 15px 0px 15px 15px;
+  /* bottom: 30px;
+  left: 60px; */
+}
+.btn-delete-detail{
+  background-color: #3483fa;
+  color: #fff;
+  width: 90%;
+}
+.btn-delete-detail, .btn-update-detail{
+  display: block;
+  border: none;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+.btn-update-detail{
+  background-color: rgba(65, 137, 230, 0.15);
+  color: rgb(52, 131, 250);
+margin-bottom: 50px;
+width: 90%;
+}
+a{
+  text-decoration: none;
+ 
+}
 /* ----------------------MEDIA QUERIS 360px---------------------------------- */
 @media (min-width: 360px) {
   .main-products {
@@ -488,6 +538,29 @@ button[type="reset"] {
   .main-products-login button[type="submit"] {
     width: 50vw;
   }
+  .img-detail{
+    max-width: 40%;
+  }
+ 
+  .detail-discont{
+  font-size: 20px;
+  top: -20px;
+  }
+  .detail-price{
+   font-size: 50px;
+  }
+  
+ 
+  .btn-update-detail{
+    background-color: rgba(65, 137, 230, 0.15);
+    color: rgb(52, 131, 250);
+  margin-bottom: 50px;
+  }
+  a{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+  }
 }
 
 /* ----------------------MEDIA QUERIS 1200px---------------------------------- */
@@ -567,5 +640,43 @@ button[type="reset"] {
   .main-products-login button[type="submit"] {
     width: 25vw;
   }
+  .img-detail{
+    max-width: 25%;
+    margin: auto 300px;
+  }
 
+ 
+  .detail-discont{
+  font-size: 22px;
+  /* top: -225px; */
+  /* left: 703px; */
+  }
+  .detail-price{
+    /* left: 500px; */
+   font-size: 50px;
+   /* top: -200px; */
+  }
+ 
+ 
+  .btn-update-detail{
+    background-color: rgba(65, 137, 230, 0.15);
+    color: rgb(52, 131, 250);
+  margin-bottom: 50px;
+  }
+  a{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+  }
+.value{
+  /* display: inline; */
+  position: relative;
+  border: 1px solid rgba(0,0,0,.1);
+  left: 700px;
+  top: -200px;
+  padding: 50px;
+  width: fit-content;
+  border-radius: 8px;
+  font-size: 14px;
+}
 }

@@ -4,20 +4,26 @@
 
   <body>
     <%- include('../partials/header') %>
-      <h1>Detalles del producto</h1>
+      <!-- <h1>Detalles del producto</h1> -->
 
-      <h2>Nombre: <%= producto.title %>
-      </h2>
-      <img src="<%= producto.img %>" />
-      <h2>Precio: <%= producto.price %>
-      </h2>
-
+      <h4 class="detail-title">
+        <%= producto.title %>
+      </h4>
+      <img class="img-detail" src="<%= producto.img %>" />
+      <div class="value">
+        <p class="detail-price">
+          <%= producto.price %>
+        </p>
+        <p class="detail-discont">
+          <%= producto.discont%>
+        </p>
+      </div>
       <form action="/products/<%= producto.id %>/delete?_method=delete" method="post">
-        <input type="submit" value="Eliminar producto"></input>
+        <input class="btn-delete-detail" type="submit" value="Eliminar producto"></input>
       </form>
       <br>
       <a href="/products/<%= producto.id %>/update">
-        <button>Editar producto</button>
+        <button class="btn-update-detail">Editar producto</button>
       </a>
 
 
